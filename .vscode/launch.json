@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "WordProcessor.WordProcessorTest",
+            "vmArgs":  "-XX:-UseCompressedOops -XX:-UseTLAB"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "WordProcessor.Driver",
+            "vmArgs":  "-XX:-UseCompressedOops -XX:-UseTLAB"
+        }
+    ]
+}
