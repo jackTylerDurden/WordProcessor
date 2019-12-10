@@ -1,3 +1,8 @@
+/*
+    Name - Tanmay Deshpande
+    Red Id - 824646024
+    Subject - CS 635 Advanced Object-Oriented Design & Programming
+ */
 package WordProcessor;
 /**
  * Hello world!
@@ -18,22 +23,22 @@ public final class Driver {
         
             @Override
             protected int create() {
-                // FontClass charFont = FontFactory.getFont("Times","Bold",10);                
-                // RunArray test = new RunArray(testText.toCharArray());
-                // test.addRun(0,250, charFont);
+                FontClass charFont = FontFactory.getFont("Times","Bold",10);                
+                RunArray test = new RunArray(testText.toCharArray());
+                test.addRun(0,250, charFont);
 
-                // charFont = FontFactory.getFont("Courier","Italic",15);                
-                // test.addRun(250,10, charFont);
+                charFont = FontFactory.getFont("Courier","Italic",15);                
+                test.addRun(250,10, charFont);
 
 
-                // charFont = FontFactory.getFont("Times","Bold",10);                
-                // test.appendRun(97, charFont);                
+                charFont = FontFactory.getFont("Times","Bold",10);                
+                test.appendRun(97, charFont);                
 
                 for(int i=0;i<charArray.length;i++){
                     char textChar = charArray[i];
                     CharacterClass charClass = CharacterFactory.getChar(textChar);
-                    // FontClass singleCharFont = test.getFont(i);
-                    // charClass.setFont(singleCharFont);
+                    FontClass singleCharFont = test.getFont(i);
+                    charClass.setFont(singleCharFont);
                 }
                 return 1;
             }
@@ -45,22 +50,22 @@ public final class Driver {
         
             @Override
             protected int create() {                
-                // FontClass charFont = new FontClass("Times","Bold",10);                
-                // RunArray test = new RunArray(testText.toCharArray());
-                // test.addRun(0,250, charFont);
+                FontClass charFont = new FontClass("Times","Bold",10);                
+                RunArray test = new RunArray(testText.toCharArray());
+                test.addRun(0,250, charFont);
 
-                // charFont = new FontClass("Courier","Italic",15);                
-                // test.addRun(250,10, charFont);
+                charFont = new FontClass("Courier","Italic",15);                
+                test.addRun(250,10, charFont);
 
 
-                // charFont = new FontClass("Times","Bold",10);                
-                // test.appendRun(97, charFont);                
+                charFont = new FontClass("Times","Bold",10);                
+                test.appendRun(97, charFont);                
 
                 for(int i=0;i<charArray.length;i++){
                     char textChar = charArray[i];
                     CharacterClass charClass = new CharacterClass (textChar);
-                    // FontClass singleCharFont = test.getFont(i);
-                    // charClass.setFont(singleCharFont);
+                    FontClass singleCharFont = test.getFont(i);
+                    charClass.setFont(singleCharFont);
                 }
                 return 1;
             }
