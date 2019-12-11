@@ -44,8 +44,7 @@ public class WordProcessorTest{
                 }
                 return 1;
             }
-        }.averageBytes();
-        //Memory used with implementing Flyweight is 24 bytes
+        }.averageBytes();        
         
 
         double memoryUsedWithoutFlyweight = new SizeofUtil(){ 
@@ -71,8 +70,7 @@ public class WordProcessorTest{
                 }
                 return 1;
             }
-        }.averageBytes();
-        //Memory used without implementing Flyweight is 8568 bytes
+        }.averageBytes();        
         
         
         assertTrue(memoryUsedWithoutFlyweight > memoryUsedWithFlyweight);
